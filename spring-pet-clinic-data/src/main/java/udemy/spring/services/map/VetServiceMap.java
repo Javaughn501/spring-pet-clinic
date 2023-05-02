@@ -1,11 +1,13 @@
 package udemy.spring.services.map;
 
+import org.springframework.stereotype.Service;
 import udemy.spring.model.Vet;
 import udemy.spring.services.CrudService;
 import udemy.spring.services.VetService;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override

@@ -1,10 +1,12 @@
 package udemy.spring.services.map;
 
+import org.springframework.stereotype.Service;
 import udemy.spring.model.Owner;
 import udemy.spring.services.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
