@@ -2,10 +2,11 @@ package udemy.spring.services.map;
 
 import udemy.spring.model.Vet;
 import udemy.spring.services.CrudService;
+import udemy.spring.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
