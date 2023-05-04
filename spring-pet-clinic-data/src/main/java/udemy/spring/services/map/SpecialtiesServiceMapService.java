@@ -2,12 +2,12 @@ package udemy.spring.services.map;
 
 import org.springframework.stereotype.Service;
 import udemy.spring.model.Specialty;
-import udemy.spring.services.SpecialtiesService;
+import udemy.spring.services.SpecialtyService;
 
 import java.util.Set;
 
 @Service
-public class SpecialtiesServiceMapService extends AbstractMapService<Specialty, Long> implements SpecialtiesService {
+public class SpecialtiesServiceMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
     @Override
     public Set<Specialty> findAll() {
         return super.findAll();
