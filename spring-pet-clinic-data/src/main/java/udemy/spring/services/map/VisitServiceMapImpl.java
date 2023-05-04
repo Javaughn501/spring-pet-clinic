@@ -1,5 +1,6 @@
 package udemy.spring.services.map;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import udemy.spring.model.Visit;
 import udemy.spring.services.VisitService;
@@ -7,6 +8,7 @@ import udemy.spring.services.VisitService;
 import java.util.Set;
 
 @Service
+@Profile({"default", "map"})
 public class VisitServiceMapImpl extends AbstractMapService<Visit, Long> implements VisitService  {
     @Override
     public Set<Visit> findAll() {
