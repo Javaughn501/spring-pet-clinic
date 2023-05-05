@@ -30,6 +30,4 @@ public class OwnerController {
         return "notImplemented";
     }
 
-
-
 }
